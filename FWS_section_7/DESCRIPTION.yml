@@ -77,5 +77,7 @@ Variables:
     datum: Datum in which the coordinates were projected; shoud be NAD83!
 Related: NA
 Depends: NA
-Comments: NA
+Comments: I am adding some comments to see how OSF handles it...does something
+    show up in 'Recent Activity'? I am adding a bit more text and will let 
+    GDrive do the sync.
 

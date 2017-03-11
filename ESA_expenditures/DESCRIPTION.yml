@@ -1,0 +1,63 @@
+Dataset: ESA_expenditures
+Title: Expenditure Data for ESA-listed Species, 2008-2013
+Version: 1.0
+Date: 2015-09-01
+SHA-256: 542fc5b967f04c8fd97c8cbb8eb8ecb350167a6e7f0623c759008b2e7d9f24d5
+License: CC-BY
+Source: Annual expenditure reports, www.fws.gov/endangered/esa-library
+URL: NA
+Authors: person(first = Jacob, last = Malcom, email = jmalcom@defenders.org,
+    role = c(aut, cre))
+Description: The US Fish and Wildlife Service (FWS) requests that federal 
+    agencies and states report their expenditures on species listed under the
+    US Endangered Species Act (ESA) each year. There is no differentiation
+    between expenditures on compliance (e.g., section 7) and recovery actions.
+    FWS then compiles a report of expenditures that they provide to Congress
+    and the public. This dataset includes "Table 1" (non-land expenditures)
+    from the 2008-2013 annual expenditure reports.
+Archives:
+    figshare: NA
+    Zenodo: NA
+Applications: 
+    ESA_expenditures: https://cci-dev.org/shiny/closed/ESA_expenditures_v0-3
+Variables:
+    Year: Fiscal year of expenditures
+    Group: Taxonomic group to which the species belongs
+    Rank: The expenditure rank for the year, as calculated by FWS
+    scientific: Scientific name of the species
+    Common: The species' common name, if available
+    Population: Which of the species' populations received the expenditure
+    Status: The species ESA listing status, e.g., threatened or endangered
+    FWS_tot: Total spending on the year+species+population by FWS
+    other_fed: Total spending on the year+species+population by other federal
+        agencies that reported expenditures to FWS
+    Fed_tot: Sum of FWS_tot and other_fed
+    State_tot: Total spending on the year+species+population by states that
+        reported expenditures to FWS
+    STATEFP: FIPS code (2-digit) for the state of occurrence
+    COUNTYFP: FIPS code (3-digit) for the county of occurrence
+    NAME: Name of the county of occurrence
+    STABBREV: Abbreviation of the state of occurrence
+    STATE: Name of the state of occurrence
+    COUNTYNS: Another code (non-FIPS) for the county of occurrence
+    GEOID: 5-digit state-county FIPS code
+    n_combos: Number of counties a species occurred in, which is used to 
+        calculate the per-county expenditures for each species-year-population
+        combination
+    grand_per_county: Sum of per-county expenditures from FWS, other fed, and 
+        states for the year+species+population+county combo
+    fws_per_county: FWS expenditures for the combination of year+species+
+        population+county
+    other_fed_per_county: Other fed expenditures for the combination of year+
+        species+population+county
+    fed_per_county: Total fed expenditures for the combination of year+
+        species+population+county
+    state_per_county: Total state expenditures for the combination of year+
+        species+population+county
+    cs: County, ST concatenation
+    sp: Inverted common name and (scientific name)
+Related: NA
+Depends: ESA_county_occurrences
+Comments: Will create a project for the ESA_county_occurrences dataset as soon
+    as possible.
+
