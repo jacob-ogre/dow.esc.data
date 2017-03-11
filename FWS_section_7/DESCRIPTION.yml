@@ -1,0 +1,81 @@
+Dataset: FWS_section_7
+Title: ESA Section 7 Consultation Data from the U.S. Fish and Wildlife Service
+Version: 2.0
+Date: 2016-05-03
+SHA-256: c60fd48e4c694d679c56a314549bf9986002508c05c2f0a735787f29e6918ff7
+License: CC0
+Source: U.S. Fish and Wildlife Service TAILS database, Falls Church, Virginia
+URL: NA
+Authors: person(first = Jacob, last = Malcom, email = jmalcom@defenders.org,
+    role = c(aut, cre))
+Description: Under section 7 of the the U.S. Endangered Species Act (ESA), 
+    Federal agencies are required to consult with the U.S. Fish and Wildlife 
+    Service (FWS) and/or National Marine Fisheries Service (NMFS) if an agency 
+    action will affect one or more listed species. Since 2008, FWS has tracked 
+    basic data about their consultations in the Tracking And Integrated Logging
+    System (TAILS) database. In laste 2014, FWS provided a copy of most TAILS 
+    variables (excluding protected data) to Defenders of Wildlife. We checked
+    and cleaned the data, analyzed it, and published the results in December,
+    2015. We update the data on a semi-regular basis as FWS provides new data.
+Archives:
+    figshare: https://figshare.com/articles/Section_7_consultation_data/3121774
+    Zenodo: http://doi.org/10.5281/zenodo.51408
+Applications: 
+    section7_explorer: https://cci-dev.org/shiny/open/section7_explorer
+Variables:
+    activity_code: Unique tracking ID for the consultation
+    region: FWS region in which the consultation was done
+    state: State in which the consultation was done, if known (see, e.g., Rock
+        Island ESFO for multi-state challenge)
+    ESOffice: FWS Ecological Services Office lead for the consultation
+    title: Consultation title
+    lead_agency: Lead agency as provided by FWS
+    FY: Fiscal year in which the consultation was logged
+    FY_start: Fiscal year at the start of consultation
+    FY_end: Fiscal year at the end of consultation
+    start_date: The date consultation was initiated
+    date_formal_consult: The date formal consultation was initiated
+    due_date: The date FWS's Biological Opinion was due, which is generally
+        30d after the start of informal consultation or 
+        135d after the start of formal consultation (except when the agency
+        agrees to an extension)
+    FWS_concl_date: Date FWS concluded consultation
+    elapsed: Consultation duration, in days
+    date_active_concl: Date the consultation concluded
+    timely_concl: Whether the consultation was finished before the due date
+    hours_logged: Whether FWS personnel logged their time for the consultation
+    events_logged: Whether FWS personnel logged significant events during
+        consultation
+    formal_consult: Whether the consultation was formal
+    consult_type: One of informal, formal, informal emergency, or formal
+        emergency consultation
+    consult_complex: One of standard, batched, programmatic program-level, or
+        programmatic project-level
+    work_type: The 'detailed' work type evaluated in the consultation
+    work_category: The general category of work type in the consultation
+    ARRA: Whether the consultation is for an action funded by the American
+        Recovery and Reinvestment Act of 2009
+    spp_ev_ls: The list of species _evaluated_ in the consultation. The variable
+        is a list in the .rds format of the dataset, but collapsed as a string
+        with semicolon delimiters in the .tsv / .xlsx formats
+    spp_BO_ls: The list of species with conclusions in the Biological Opinion. 
+        The variable is a list in the .rds format of the dataset, but collapsed 
+        as a string with pipe '|' delimiters in the .tsv / .xlsx formats
+    n_spp_eval: Number of species evaluated
+    n_nofx: Number of no-effect (NE) determinations
+    n_NLAA: Number of 'not likely to adversely affect' (NLAA) determinations
+    n_conc: Number of concurrences with the agency determinations
+    n_jeop: Number of jeopardy determinations
+    n_rpa: Number of jeopardy / adverse modification determinations with 
+        Reasonable and Prudent Alternatives (RPAs)
+    n_admo: Number of adverse modification determinations
+    n_tech: Numbe of species evaluated that were technical assistance by FWS
+    staff_lead_hash: Hash of the FWS staff lead for the consultation
+    staff_support_hash: Hash of the FWS staff assisting on the consultation
+    long: Decimal-degree longitude of the consulted action
+    lat: Decimal-degree longitude of the consulted action
+    datum: Datum in which the coordinates were projected; shoud be NAD83!
+Related: NA
+Depends: NA
+Comments: NA
+
