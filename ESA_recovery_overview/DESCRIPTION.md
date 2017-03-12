@@ -2,14 +2,14 @@
 
 _Data to Get an Overview of the Status of ESA Recovery Plans_
 
-- [Metadata](#metadata)
-- [Description](#description)
-- [Variables](#variables)
-- [Applications](#applications)
-- [Archives](#archives)
-- [Comments](#comments)
+- [Metadata](#Metadata_11)
+- [Description](#Description_25)
+- [Variables](#Variables_38)
+- [Applications](#Applications_47)
+- [Archives](#Archives_53)
+- [Comments](#Comments_60)
 
-## Metadata<a name='metadata'></a>
+## Metadata
 - **Version:** 1.0
 - **Date:** 2016-09-01 
 - **SHA-256:** 
@@ -23,7 +23,7 @@ _Data to Get an Overview of the Status of ESA Recovery Plans_
     [National Marine Fisheries Service's recovery website](http://www.nmfs.noaa.gov/pr/recovery/plans.htm) 
     and entering the requisite data into a spreadsheet.
 
-## Description<a name='description'></a>
+## Description
 
 The U.S. Endangered Species Act (ESA) requires the U.S. Fish and Wildlife Service 
 (FWS) and National Marine Fisheries Service (NMFS) develop recovery plan for 
@@ -36,7 +36,7 @@ The first dataset, `FWS_rerecovery_plan_data.rds`, was scraped from FWS's websit
 in September, 2016. The second dataset, `NMFS_recovery_data_manual.rds` was 
 acquired by visiting NMFS's website and manually entering data.
 
-## Variables<a name='variables'></a>
+## Variables
 
 - **Date:** Date of the recovery plan
 - **Title:** Recovery plan title
@@ -45,20 +45,21 @@ acquired by visiting NMFS's website and manually entering data.
 - **Doc_Link:** URL of the recovery plan
 - **Species:** The scientific name of the species, as given by FWS
 
-## Applications<a name='applications'></a>
+## Applications
 
 Web applications using these dataset include:
 
 - [Whitepaper/app](https://cci-dev.org/working_papers/recovery_plan_analysis.html)
 
-## Archives<a name='archives'></a>
+## Archives
 
 External public repositories containing these data sets:
 
 - figshare: NA
 - Zenodo: NA
 
-## Comments<a name='comments'></a>
+## Comments
 
 NA
 
+[Top](#ESA_recovery_planning_overview_0)
